@@ -4,4 +4,4 @@ function logAtleastFive(n) {
     }
 }
 
-logAtleastFive();
+logAtleastFive(2);
