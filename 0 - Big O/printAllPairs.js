@@ -5,6 +5,7 @@ function printAllPairs(n) {
             console.log(i, j);
         }
     }
+    console.log("End");
 }
 
 printAllPairs(3);
