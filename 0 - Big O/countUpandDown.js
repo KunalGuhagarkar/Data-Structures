@@ -9,4 +9,4 @@ function countUpandDown(n) {
     }
 }
 
-countUpandDown(10);
+countUpandDown(5);
