@@ -4,4 +4,4 @@ let instructor = {
     favNumbers: [13, 7, 23, 30, 17]
 }
 
-console.log(Object.entries(instructor));
+console.log(Object.hasOwn(instructor, "firstname"));
