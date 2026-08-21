@@ -17,6 +17,6 @@ charCount("Hello hi")
 // Empty Inputs:
 charCount()
 charCount("")
-// what should happen in such situation?
+// what should happen in such situation? what should we return? {} / null or something else...
 
 
