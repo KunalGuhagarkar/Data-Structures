@@ -54,3 +54,4 @@ function isAlphanumeric(char) {
 }
 
 console.log(charCount("Hi 13 & hello"));
+// Output -> { '1': 1, '3': 1, h: 2, i: 1, e: 1, l: 2, o: 1 }
