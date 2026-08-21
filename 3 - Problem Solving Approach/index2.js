@@ -14,3 +14,9 @@ charCount("my phone number is 182763")
 charCount("Hello hi")
 // are we gonna put capital H and small h seperate or together ?
 
+// Empty Inputs:
+charCount()
+charCount("")
+// what should happen in such situation?
+
+
