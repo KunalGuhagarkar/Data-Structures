@@ -25,5 +25,8 @@ function charCount(str) {
 
 console.log(charCount("hello")); // Output -> { h: 1, e: 1, l: 2, o: 1 }
 
+// Before .toLowerCase()
 console.log(charCount("Hello hi")); // Output -> { H: 1, e: 1, l: 2, o: 1, ' ': 1, h: 1, i: 1 }
 
+// After .toLowerCase()
+console.log(charCount("Hello hi"));
