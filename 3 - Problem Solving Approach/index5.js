@@ -7,7 +7,7 @@ function charCount(str) {
         let char = str[i].toLowerCase();
 
         // if char is something else (space, period, etc) don't do anyting
-        if (/[a-zA-Z]/.test(char)) {
+        if (/[a-z0-9]/.test(char)) {
             // if char is a number/letter AND in object, add 1 to count.
             if (result[char] > 0) {
                 result[char]++;
@@ -24,4 +24,4 @@ function charCount(str) {
     return result;
 }
 
-console.log(charCount("Hi hello"));
+console.log(charCount("Hi 13 & hello"));
