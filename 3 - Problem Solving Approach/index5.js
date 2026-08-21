@@ -49,9 +49,8 @@ function isAlphanumeric(char) {
         !(code > 96 && code < 123)
     ) {
         return false;
-    } else {
-        return true;
     }
+    return true;
 }
 
 console.log(charCount("Hi 13 & hello"));
