@@ -24,3 +24,4 @@ function charCount(str) {
     return result;
 }
 
+charCount("Hi hello");
