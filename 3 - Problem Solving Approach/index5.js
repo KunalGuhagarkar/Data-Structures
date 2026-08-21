@@ -32,8 +32,7 @@
 function charCount(str) {
     let result = {};
 
-    for (char of str) {
-        str[i].toLowerCase();
+    for (char.toLowerCase() of str) {
 
         if (/[a-z0-9]/.test(char)) {
             if (result[char] > 0) {
