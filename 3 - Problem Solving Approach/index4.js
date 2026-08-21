@@ -29,4 +29,5 @@ console.log(charCount("hello")); // Output -> { h: 1, e: 1, l: 2, o: 1 }
 console.log(charCount("Hello hi")); // Output -> { H: 1, e: 1, l: 2, o: 1, ' ': 1, h: 1, i: 1 }
 
 // After .toLowerCase()
-console.log(charCount("Hello hi"));
+console.log(charCount("Hello hi")); // Output -> { h: 2, e: 1, l: 2, o: 1, ' ': 1, i: 1 }
+
