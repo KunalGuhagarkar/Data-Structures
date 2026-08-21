@@ -19,4 +19,9 @@ charCount()
 charCount("")
 // what should happen in such situation? what should we return? {} / null or something else...
 
+// Invalid Inputs:
+charCount(13)
+charCount({})
+charCount(null)
+// what will happpen when someone passes a number or object or null or something else invalid
 
