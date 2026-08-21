@@ -4,7 +4,7 @@ function charCount(str) {
 
     // loop over string, for each chareacter ...
     for (let i = 0; i < str.length; i++) {
-        let char = str[i];
+        let char = str[i].toLowerCase();
 
         // if char is a number/letter AND in object, add 1 to count.
         if (result[char] > 0) {
