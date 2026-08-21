@@ -26,3 +26,22 @@
 
 // console.log(charCount("Hi 13 & hello"));
 // // Output -> { '1': 1, '3': 1, h: 2, i: 1, e: 1, l: 2, o: 1 }
+
+function charCount(str) {
+    let result = {};
+
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i].toLowerCase();
+
+        if (/[a-z0-9]/.test(char)) {
+            if (result[char] > 0) {
+                result[char]++;
+            } else {
+                result[char] = 1;
+            }
+        }
+    }
+    return result;
+}
+
+console.log(charCount("Hi 13 & hello"));
