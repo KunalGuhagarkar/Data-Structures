@@ -23,5 +23,7 @@ function charCount(str) {
     return result;
 }
 
-console.log(charCount("hello"));
-console.log(charCount("Hello hi"));
+console.log(charCount("hello")); // Output -> { h: 1, e: 1, l: 2, o: 1 }
+
+console.log(charCount("Hello hi")); // Output -> { H: 1, e: 1, l: 2, o: 1, ' ': 1, h: 1, i: 1 }
+
