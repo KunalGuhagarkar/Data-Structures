@@ -41,4 +41,17 @@ function charCount(str) {
     return result;
 }
 
+function isAlphanumeric(char) {
+    let code = char.charCodeAt(0);
+    if (
+        !(code > 47 && code < 58) &&
+        !(code > 64 && code < 91) &&
+        !(code > 96 && code < 123)
+    ) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
 console.log(charCount("Hi 13 & hello"));
