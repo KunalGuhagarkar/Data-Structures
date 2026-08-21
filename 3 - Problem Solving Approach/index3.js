@@ -1,6 +1,5 @@
 // Break it down
 
-
 // skeleton
 function charCount(str) {
     // do something
