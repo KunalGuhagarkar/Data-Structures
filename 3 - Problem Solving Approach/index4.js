@@ -24,3 +24,4 @@ function charCount(str) {
 }
 
 console.log(charCount("hello"));
+console.log(charCount("Hello hi"));
