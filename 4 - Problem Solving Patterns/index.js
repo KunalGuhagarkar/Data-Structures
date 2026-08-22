@@ -14,8 +14,9 @@ function same(arr1, arr2) {
     for (let i = 0; i < arr1.length; i++) {
         let correctIndex = arr2.indexOf(arr1[i] ** 2);
         if (correctIndex === -1) return false;
+        arr1.splice(correctIndex, 1);
     }
-    arr1.splice(correctIndex, 1);
+    return true;
 }
 
 console.log(same([1,2], [1]));
