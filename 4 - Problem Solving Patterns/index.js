@@ -45,7 +45,7 @@ function same(arr1, arr2) {
         
 
         console.log(key);
-        console.log(frequencyCounter1[key])
+        console.log(frequencyCounter2[key**2])
     }
     return true;
 }
