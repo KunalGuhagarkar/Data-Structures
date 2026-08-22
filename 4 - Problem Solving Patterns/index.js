@@ -8,3 +8,8 @@
     same([1,2,1], [4,4,1]) // false (must be same frequency)
 */
 
+function same(arr1, arr2) {
+    if (arr1.length !== arr2.length) return false;
+}
+
+console.log(same([1,2], [1]));
