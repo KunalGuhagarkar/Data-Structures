@@ -38,7 +38,8 @@ function same(arr1, arr2) {
     for (val of arr2) {
         frequencyCounter2[val] = (frequencyCounter2[val] || 0) + 1;
     }
-
+    console.log(frequencyCounter1);
+    console.log(frequencyCounter2);
     for (key in frequencyCounter1) {
         if (!(key == frequencyCounter2[key**2])) {
             return false;
