@@ -44,6 +44,9 @@ function same(arr1, arr2) {
         if (!(key ** 2 in frequencyCounter2)) {
             return false;
         }
+        if (frequencyCounter1[key] !== frequencyCounter2[key**2]) {
+            return false;
+        }
 
     }
     return true;
