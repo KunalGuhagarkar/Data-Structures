@@ -23,4 +23,4 @@ function validAnagram(str1, str2) {
     }
 }
 
-console.log(validAnagram("kunal", "kun"));
+console.log(validAnagram("kunal", "lanuk"));
