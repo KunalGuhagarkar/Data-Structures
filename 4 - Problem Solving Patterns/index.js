@@ -46,7 +46,7 @@ function same(arr1, arr2) {
             return false;
         }
 
-        
+        console.log(key);
         console.log(frequencyCounter1[key])
     }
     return true;
