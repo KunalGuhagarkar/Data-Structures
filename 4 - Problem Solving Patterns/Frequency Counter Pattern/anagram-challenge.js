@@ -21,12 +21,10 @@ function validAnagram(str1, str2) {
     for (let char of str1) {
         freqCounter1[char] = (freqCounter1[char] || 0) + 1;
     }
-    
+
     for (let char of str2) {
         freqCounter2[char] = (freqCounter2[char] || 0) + 1;
     }
-    console.log(freqCounter1);
-    console.log(freqCounter2);
 
     for (let key in freqCounter1) {
         if (!(key in freqCounter2)) return false;
@@ -35,10 +33,10 @@ function validAnagram(str1, str2) {
     return true;
 }
 
-console.log(validAnagram('', '')) // true
-console.log(validAnagram('aaz', 'zza')) // false
-console.log(validAnagram('anagram', 'nagaram')) // true
-console.log(validAnagram("rat","car")) // false) // false
-console.log(validAnagram('awesome', 'awesom')) // false
-console.log(validAnagram('qwerty', 'qeywrt')) // true
-console.log(validAnagram('texttwisttime', 'timetwisttext')) // true
+console.log(validAnagram("", "")); // true
+console.log(validAnagram("aaz", "zza")); // false
+console.log(validAnagram("anagram", "nagaram")); // true
+console.log(validAnagram("rat", "car")); // false) // false
+console.log(validAnagram("awesome", "awesom")); // false
+console.log(validAnagram("qwerty", "qeywrt")); // true
+console.log(validAnagram("texttwisttime", "timetwisttext")); // true
