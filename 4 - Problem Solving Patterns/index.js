@@ -40,17 +40,15 @@ function same(arr1, arr2) {
     }
     console.log(frequencyCounter1);
     console.log(frequencyCounter2);
-    console.log(frequencyCounter2[4]);
-    // for (key in frequencyCounter1) {
-    //     if (!(key**2 == frequencyCounter2)) {
-    //         return false;
-    //     }
+    console.log(frequencyCounter2[2]);
+    for (key in frequencyCounter1) {
+        if (!(key**2 == frequencyCounter2[key**2])) {
+            return false;
+        }
 
-    //     if (frequencyCounter1[key] !== frequencyCounter2[key ** 2]) {
-    //         return false;
-    //     }
-    //     console.log(frequencyCounter1[key])
-    // }
+        
+        console.log(frequencyCounter1[key])
+    }
     return true;
 }
 

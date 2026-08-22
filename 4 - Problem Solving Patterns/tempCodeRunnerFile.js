@@ -1,4 +1,3 @@
-if (! (key**2 == frequencyCounter2[key])) {
-            
+if (frequencyCounter1[key] !== frequencyCounter2[key ** 2]) {
         //     return false;
         // }
