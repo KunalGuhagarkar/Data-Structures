@@ -40,7 +40,7 @@ function same(arr1, arr2) {
     }
 
     for (key in frequencyCounter1) {
-        if (!(key ** 2 == frequencyCounter2[key ** 2])) {
+        if (!(key == frequencyCounter2[key**2])) {
             return false;
         }
 
