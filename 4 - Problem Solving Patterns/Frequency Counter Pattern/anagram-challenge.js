@@ -35,4 +35,4 @@ function validAnagram(str1, str2) {
     return true;
 }
 
-console.log(validAnagram("kunal", "lanuk"));
+console.log(validAnagram("kunal", "lanuf"));
