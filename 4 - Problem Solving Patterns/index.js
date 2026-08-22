@@ -14,5 +14,9 @@ function same(arr1, arr2) {
         frequencyCounter2[val] = (frequencyCounter2[val] || 0) + 1;
     }
 
-    
+    for (let key in frequencyCounter1) {
+        console.log(key);
+    }
 }
+
+console.log(same([1,2,3], [4,9,1]));
