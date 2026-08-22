@@ -18,9 +18,10 @@ function validAnagram(str1, str2) {
     let freqCounter1 = {};
     let freqCounter2 = {};
 
-    for (let char in str1) {
-        console.log(char);
+    for (let char of str1) {
+        freqCounter1[char] = (freqCounter1[char] || 0) + 1;
     }
+    console.log(freqCounter1);
 }
 
 console.log(validAnagram("kunal", "lanuk"));
