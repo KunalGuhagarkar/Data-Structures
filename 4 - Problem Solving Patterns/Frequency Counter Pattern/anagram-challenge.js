@@ -14,6 +14,13 @@ validAnagram('texttwisttime', 'timetwisttext') // true
 
 function validAnagram(str1, str2) {
     if (str1.length !== str2.length) return false;
+
+    let freqCounter1 = {};
+    let freqCounter2 = {};
+
+    for (let char in str1) {
+        console.log(char);
+    }
 }
 
 console.log(validAnagram("kunal", "kun"));
