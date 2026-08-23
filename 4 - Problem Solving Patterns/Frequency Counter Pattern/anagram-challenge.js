@@ -41,6 +41,8 @@ console.log(validAnagram("awesome", "awesom")); // false
 console.log(validAnagram("qwerty", "qeywrt")); // true
 console.log(validAnagram("texttwisttime", "timetwisttext")); // true
 
+console.log("\n")
+
 // Refractor using only 1 freqCounter variable
 
 function validAnagram2(str1, str2) {
