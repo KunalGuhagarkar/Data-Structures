@@ -59,6 +59,7 @@ function validAnagram2(str1, str2) {
     return true;
 }
 
+console.log(" ");
 console.log(validAnagram2("", "")); // true
 console.log(validAnagram2("aaz", "zza")); // false
 console.log(validAnagram2("anagram", "nagaram")); // true
