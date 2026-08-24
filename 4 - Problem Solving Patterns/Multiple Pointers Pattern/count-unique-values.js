@@ -8,7 +8,6 @@
 
 function countUniqueValues(arr) {
     let start = 0;
-    let start_plus = start + 1;
     let count = 0;
 
     if (arr.length === 0) return count;
