@@ -12,10 +12,12 @@ function countUniqueValues(arr) {
     let count = 0;
     while (start_plus < arr.length) {
         console.log(arr[start], arr[start_plus]);
-        if (arr[start] !== arr[start_plus]) {
-            count++;
+        if (arr[start] === arr[start_plus]) {
+            start++;
+            start_plus++;
+        } else {
+            count++
         }
-        start_plus++;
     }
     return count;
 }
