@@ -35,10 +35,10 @@ function countUniqueValues(arr) {
     for (let j = 1; j < arr.length; j++) {
         if (arr[i] !== arr[j]) {
             i++;
-            console.log(arr[i]);
             arr[i] = arr[j];
+            console.log(arr);
         }
-        console.log(arr);
+        
     }
     return i + 1;
 }
