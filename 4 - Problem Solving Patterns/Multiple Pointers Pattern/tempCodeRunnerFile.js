@@ -1,0 +1,1 @@
+console.log(arr[start], arr[start_plus]);

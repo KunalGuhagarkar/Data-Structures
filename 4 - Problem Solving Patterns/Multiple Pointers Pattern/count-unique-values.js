@@ -14,7 +14,7 @@ function countUniqueValues(arr) {
     if (arr.length === 0) return count;
 
     while (start_plus < arr.length + 1) {
-        console.log(arr[start], arr[start_plus]);
+        // console.log(arr[start], arr[start_plus]);
         if (arr[start] !== arr[start_plus]) {
             count++;
         }
@@ -27,4 +27,4 @@ function countUniqueValues(arr) {
 console.log(countUniqueValues([1, 1, 1, 1, 1, 2]));
 console.log(countUniqueValues([1, 2, 3, 4, 4, 4, 7, 7, 12, 12, 13]));
 console.log(countUniqueValues([]));
-console.log(countUniqueValues([1, 2, 3, 4, 4, 4, 7, 7, 12, 12, 13]));
+console.log(countUniqueValues([-2,-1,-1,0,1]));
