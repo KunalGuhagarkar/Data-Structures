@@ -6,34 +6,33 @@
 // countUniqueValues([]) // 0
 // countUniqueValues([-2,-1,-1,0,1]) // 4
 
-function countUniqueValues(arr) {
-    let start = 0;
-    let count = 0;
+// function countUniqueValues(arr) {
+//     let start = 0;
+//     let count = 0;
 
-    if (arr.length === 0) return count;
+//     if (arr.length === 0) return count;
 
-    while (start < arr.length) {
-        if (arr[start] !== arr[start + 1]) {
-            count++;
-        }
-        start++;
-    }
-    return count;
-}
+//     while (start < arr.length) {
+//         if (arr[start] !== arr[start + 1]) {
+//             count++;
+//         }
+//         start++;
+//     }
+//     return count;
+// }
 
-console.log(countUniqueValues([1, 1, 1, 1, 1, 2]));
-console.log(countUniqueValues([1, 2, 3, 4, 4, 4, 7, 7, 12, 12, 13]));
-console.log(countUniqueValues([]));
-console.log(countUniqueValues([-2, -1, -1, 0, 1]));
-
+// console.log(countUniqueValues([1, 1, 1, 1, 1, 2]));
+// console.log(countUniqueValues([1, 2, 3, 4, 4, 4, 7, 7, 12, 12, 13]));
+// console.log(countUniqueValues([]));
+// console.log(countUniqueValues([-2, -1, -1, 0, 1]));
 
 // Another Approach
 function countUniqueValues(arr) {
     if (arr.length === 0) return 0;
 
-    let i = 0
+    let i = 0;
 
-    for(let j = 1; j < arr.length; j++) {
+    for (let j = 1; j < arr.length; j++) {
         if (arr[i] !== arr[j]) {
             i++;
             arr[i] = arr[j];
@@ -41,3 +40,8 @@ function countUniqueValues(arr) {
     }
     return i + 1;
 }
+
+console.log(countUniqueValues([1, 1, 1, 1, 1, 2]));
+console.log(countUniqueValues([1, 2, 3, 4, 4, 4, 7, 7, 12, 12, 13]));
+console.log(countUniqueValues([]));
+console.log(countUniqueValues([-2, -1, -1, 0, 1]));
