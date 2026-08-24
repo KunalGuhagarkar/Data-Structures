@@ -13,10 +13,9 @@ function countUniqueValues(arr) {
     while (start_plus < arr.length) {
         if (arr[start] !== arr[start_plus]) {
             count++;
-        } else {
-            start++;
-            start_plus++;
         }
+        start++;
+        start_plus++;
     }
     return count;
 }
