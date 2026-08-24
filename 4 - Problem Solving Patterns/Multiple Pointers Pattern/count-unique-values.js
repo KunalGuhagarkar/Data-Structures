@@ -18,4 +18,5 @@ function countUniqueValues(arr) {
             start_plus++;
         }
     }
+    return count;
 }
