@@ -10,7 +10,7 @@
 // Naive Solution:
 
 function maxSubarraySum(arr, num) {
-    if (arr.length === 0) return null;
+    if (arr.length < num) return null;
 
     let max = -Infinity;
 
