@@ -27,6 +27,8 @@ function sameFrequency(num1, num2) {
         freqCounter[num]--;
     }
 
+    return true;
+
     console.log(freqCounter);
     
 }
