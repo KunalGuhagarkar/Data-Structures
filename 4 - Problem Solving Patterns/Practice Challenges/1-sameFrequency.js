@@ -27,10 +27,8 @@ function sameFrequency(num1, num2) {
         freqCounter[num]--;
     }
 
-    console.log(freqCounter);
-
     return true;
 }
 
-console.log(sameFrequency(182,281));
-console.log(sameFrequency(34,14));
+console.log(sameFrequency(182, 281));
+console.log(sameFrequency(34, 14));
