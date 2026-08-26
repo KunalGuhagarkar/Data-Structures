@@ -1,4 +1,6 @@
-// count down
+// First Recursive Code
+
+// Count Down from n numbers
 
 function countDown(num) {
     if (num === 0) {
