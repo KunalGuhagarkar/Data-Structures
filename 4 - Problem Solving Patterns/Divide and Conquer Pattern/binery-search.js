@@ -27,9 +27,9 @@ function search(arr, target) {
         if (arr[mid] === target) {
             return mid;
         } else if (arr[mid] > target) {
-            max = mid - 1;
+            max = mid;
         } else {
-            min = mid + 1;
+            min = mid;
         }
     }
     return -1;
