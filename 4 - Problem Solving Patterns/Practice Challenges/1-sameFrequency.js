@@ -12,3 +12,5 @@ Sample Input:
 4. sameFrequency(22,222) // false
 
 */
+
+
