@@ -13,4 +13,8 @@ Sample Input:
 
 */
 
+function sameFrequency(num1, num2) {
+    return;
+}
 
+console.log(typeof `${12}`)
