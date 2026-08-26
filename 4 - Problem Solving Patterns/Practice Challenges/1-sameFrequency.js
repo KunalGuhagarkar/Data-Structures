@@ -14,7 +14,9 @@ Sample Input:
 */
 
 function sameFrequency(num1, num2) {
-    return;
+    if (`${num1}`.length !== `${num2}`.length) return false;
+
+    
 }
 
-console.log(typeof `${12}`)
+console.log(sameFrequency(22,222));
