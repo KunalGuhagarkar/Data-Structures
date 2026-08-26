@@ -28,6 +28,7 @@ function sameFrequency(num1, num2) {
     }
 
     console.log(freqCounter1);
+    console.log(freqCounter2);
 
 
     
