@@ -20,7 +20,7 @@ function sameFrequency(num1, num2) {
     let freqCounter2 = {};
 
     for (num of `${num1}`) {
-        freqCounter1 += (freqCounter1[num] || 0) + 1;
+        freqCounter1[num] = (freqCounter1[num] || 0) + 1;
     }
 
     console.log(freqCounter1);
