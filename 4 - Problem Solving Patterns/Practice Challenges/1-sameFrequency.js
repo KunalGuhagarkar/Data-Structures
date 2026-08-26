@@ -33,3 +33,4 @@ function sameFrequency(num1, num2) {
 }
 
 console.log(sameFrequency(182,281));
+console.log(sameFrequency(34,14));
