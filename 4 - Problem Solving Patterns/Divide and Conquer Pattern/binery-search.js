@@ -22,7 +22,7 @@ function search(arr, target) {
     let min = 0;
     let max = arr.length - 1;
 
-    while (min < max) {
+    while (min <= max) {
         const mid = Math.floor((min + max) / 2);
         if (arr[mid] === target) {
             return mid;
