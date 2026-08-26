@@ -16,11 +16,11 @@ Sample Input:
 function sameFrequency(num1, num2) {
     if (`${num1}`.length !== `${num2}`.length) return false;
 
-    const freqCounter1 = {};
-    const freqCounter2 = {};
+    let freqCounter1 = {};
+    let freqCounter2 = {};
 
     for (num of `${num1}`) {
-        freqCounter1 += (freqCounter1[num] || 0) + 1;
+        freqCounter1 = (freqCounter1[num] || 0) + 1;
     }
 
     console.log(freqCounter1);
