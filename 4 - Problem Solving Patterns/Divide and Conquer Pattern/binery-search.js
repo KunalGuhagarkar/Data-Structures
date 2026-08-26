@@ -21,8 +21,8 @@
 function search(arr, target) {
     let min = 0;
     let max = arr.length - 1;
-    
-    while(min < max) {
+
+    while (min < max) {
         const mid = Math.floor((min + max) / 2);
         if (arr[mid] === target) {
             return mid;
@@ -32,6 +32,7 @@ function search(arr, target) {
             min = mid;
         }
     }
+    return -1;
 }
 
 console.log(search([1, 2, 3, 4, 5, 6, 7], 4));
