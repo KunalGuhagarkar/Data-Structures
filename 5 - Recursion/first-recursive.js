@@ -5,4 +5,9 @@ function countDown(num) {
         console.log("All done!");
         return;
     }
+    console.log(num);
+    num--;
+    return countDown(num);
 }
+
+countDown(5);
