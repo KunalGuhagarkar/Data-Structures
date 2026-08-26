@@ -23,10 +23,14 @@ function sameFrequency(num1, num2) {
         freqCounter1[num] = (freqCounter1[num] || 0) + 1;
     }
 
+    for (num of `${num2}`) {
+        freqCounter2[num] = (freqCounter2[num] || 0) + 1;
+    }
+
     console.log(freqCounter1);
 
 
     
 }
 
-console.log(sameFrequency(222,281));
+console.log(sameFrequency(182,281));
