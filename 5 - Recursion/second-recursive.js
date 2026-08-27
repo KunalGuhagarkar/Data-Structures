@@ -5,4 +5,7 @@ function sumRange(num) {
     return num + sumRange(num-1);
 }
 
-console.log(sumRange(5));
+console.log(sumRange(5)); // 15
+
+// 5+4+3+2+1
+// (5 + sumRange(4 + sumRange(3 + sumRange(2 + sumRange(1)))))
