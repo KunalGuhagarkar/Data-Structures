@@ -8,7 +8,7 @@ function collectOddValues(arr) {
 
     if (arr.length === 0) return newArr;
 
-    console.log(arr);
+    console.log(newArr);
 
     if (arr[0] % 2 !== 0) {
         newArr.push(arr[0])
