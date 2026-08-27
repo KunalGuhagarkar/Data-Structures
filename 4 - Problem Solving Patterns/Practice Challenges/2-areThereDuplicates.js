@@ -5,6 +5,7 @@
 // areThereDuplicates(1, 2, 2) // true
 // areThereDuplicates('a', 'b', 'c', 'a') // true
 
+// Solution
 // Time Complexity -> O(n)
 // Space Complexity -> O(n)
 function areThereDuplicates(...items) {
@@ -22,6 +23,7 @@ function areThereDuplicates(...items) {
 // console.log(areThereDuplicates(1, 2, 2));
 // console.log(areThereDuplicates("a", "b", "c", "a"));
 
+// Another Solution
 // Time Complexity -> O(n log n)
 // Space Complexity -> O(1)
 
