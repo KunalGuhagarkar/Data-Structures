@@ -29,7 +29,7 @@ function areThereDuplicates2(...items) {
     items.sort(); // sorts in O(n logn) time complexity
 
     for (let i = 0; i < items.length; i++) {
-        if (items[i] === items[i+1]) return true;
+        if (items[i] === items[i + 1]) return true;
     }
     return false;
 }
@@ -37,4 +37,3 @@ function areThereDuplicates2(...items) {
 console.log(areThereDuplicates2(1, 2, 3));
 console.log(areThereDuplicates2(1, 2, 2));
 console.log(areThereDuplicates2("a", "b", "c", "a"));
-
