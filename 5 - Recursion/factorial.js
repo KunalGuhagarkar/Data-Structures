@@ -6,5 +6,9 @@
 // Interative Approach
 
 function factorial(num) {
-    
+    for (let i = num; i > 0; i--) {
+        console.log(i);
+    }
 }
+
+console.log(factorial(5));
