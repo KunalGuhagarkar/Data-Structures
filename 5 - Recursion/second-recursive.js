@@ -7,5 +7,5 @@ function sumRange(num) {
 
 console.log(sumRange(5)); // 15
 
-// 5+4+3+2+1
+// 5+4+3+2+1 = 15
 // (5 + sumRange(4 + sumRange(3 + sumRange(2 + sumRange(1)))))
