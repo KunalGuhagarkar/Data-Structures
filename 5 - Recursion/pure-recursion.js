@@ -3,6 +3,9 @@
 // Collect all of the odd values in an array!
 
 function collectOddValues(arr) {
+
+    let newArr = [];
+
     if (arr.length === 0) return;
 
     console.log(arr);
