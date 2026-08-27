@@ -5,5 +5,5 @@
 function collectOddValues(arr) {
     if (arr.length === 0) return;
 
-    
+    console.log(collectOddValues(arr.splice(1)));
 }
