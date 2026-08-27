@@ -3,12 +3,13 @@
 // Collect all of the odd values in an array!
 
 function collectOddValues(arr) {
-    if (arr.length === 0) return;
+    if (arr.length === 0) return result;
 
     console.log(arr);
+    const result = [];
 
     if (arr[0] % 2 !== 0) {
-        console.log(arr[0]);
+        result.push(arr[0])
     }
     return collectOddValues(arr.splice(1));
 }
