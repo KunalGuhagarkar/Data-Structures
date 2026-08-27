@@ -8,8 +8,9 @@
 function factorial(num) {
     let fact = 0
     for (let i = num; i > 0; i--) {
-        console.log(i);
+        // console.log(i);
         fact *= i;
+        console.log(fact);
     }
     return fact;
 }
