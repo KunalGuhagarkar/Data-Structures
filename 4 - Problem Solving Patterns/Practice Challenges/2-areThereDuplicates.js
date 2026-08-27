@@ -21,4 +21,4 @@ function areThereDuplicates(...items) {
 console.log(areThereDuplicates(1, 2, 3));
 console.log(areThereDuplicates(1, 2, 2));
 console.log(areThereDuplicates("a", "b", "c", "a"));
-console.log(areThereDuplicates(-1,-1));
+console.log(areThereDuplicates(-1,-1, 3, 2));
