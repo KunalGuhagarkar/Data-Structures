@@ -6,12 +6,12 @@ function collectOddValues(arr) {
 
     let newArr = [];
 
-    if (arr.length === 0) return;
+    if (arr.length === 0) return newArr;
 
     console.log(arr);
 
     if (arr[0] % 2 !== 0) {
-        return collectOddValues(arr);
+        newArr.push(arr[0])
     }
     return collectOddValues(arr.splice(1));
 }
