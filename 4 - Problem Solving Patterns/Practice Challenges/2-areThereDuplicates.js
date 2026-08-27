@@ -9,8 +9,10 @@ function areThereDuplicates(...items) {
     let freqCounter = {};
 
     for (let item of items) {
-        console.log(item);
+        freqCounter[item] = (freqCounter[item] || 0) + 1;
     }
+
+    console.log(freqCounter);
 
 }
 
