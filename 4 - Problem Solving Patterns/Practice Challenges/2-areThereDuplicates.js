@@ -34,7 +34,7 @@ function areThereDuplicates2(...items) {
     return false;
 }
 
-console.log(areThereDuplicates2(1, 2, 2));
 console.log(areThereDuplicates2(1, 2, 3));
+console.log(areThereDuplicates2(1, 2, 2));
 console.log(areThereDuplicates2("a", "b", "c", "a"));
 
