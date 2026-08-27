@@ -14,6 +14,7 @@ function collectOddValues(arr) {
         newArr.push(arr[0])
     }
     newArr = newArr.concat(collectOddValues(arr.splice(1)));
+    
 }
 
 console.log(collectOddValues([1, 2, 3, 4, 5]));
