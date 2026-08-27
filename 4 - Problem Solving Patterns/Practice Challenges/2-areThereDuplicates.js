@@ -14,11 +14,8 @@ function areThereDuplicates(...items) {
         freqCounter[item] = (freqCounter[item] || 0) + 1;
     }
     return false;
-
-    // console.log(freqCounter);
 }
 
 console.log(areThereDuplicates(1, 2, 3));
 console.log(areThereDuplicates(1, 2, 2));
 console.log(areThereDuplicates("a", "b", "c", "a"));
-console.log(areThereDuplicates(-1,-1, 3, 2));
