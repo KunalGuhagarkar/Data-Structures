@@ -28,7 +28,10 @@ function areThereDuplicates(...items) {
 function areThereDuplicates2(...items) {
     items.sort();
 
-    console.log(items);
+    for (let i = 0; i < items.length; i++) {
+        if (items[i] === items[i+1]) return true;
+    }
+    return false;
 }
 
 console.log(areThereDuplicates2(1, 2, 2));
