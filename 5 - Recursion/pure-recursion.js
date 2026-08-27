@@ -3,7 +3,7 @@
 // Collect all of the odd values in an array!
 
 function collectOddValues(arr) {
-    if (arr.length === 0) return result;
+    if (arr.length === 0) return;
 
     console.log(arr);
     const result = [];
