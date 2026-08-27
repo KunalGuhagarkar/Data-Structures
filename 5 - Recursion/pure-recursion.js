@@ -10,7 +10,7 @@ function collectOddValues(arr) {
     if (arr[0] % 2 !== 0) {
         newArr.push(arr[0]);
     }
-    newArr = newArr.concat(collectOddValues(arr.splice(1)));
+    newArr = newArr.concat(collectOddValues(arr.slice(1)));
     return newArr;
 }
 
