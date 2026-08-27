@@ -9,7 +9,7 @@ function factorial(num) {
     let fact = 1;
     for (let i = num; i > 0; i--) {
         fact *= i;
-        console.log(fact);
+        console.log(i, fact);
     }
     return fact;
 }
