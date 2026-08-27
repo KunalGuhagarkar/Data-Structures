@@ -6,7 +6,9 @@
 // areThereDuplicates('a', 'b', 'c', 'a') // true
 
 function areThereDuplicates(...items) {
-    console.log(items);
+    let freqCounter = {};
+
+    
 }
 
 console.log(areThereDuplicates(1,2,3,4));
