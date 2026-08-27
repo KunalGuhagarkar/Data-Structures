@@ -6,6 +6,7 @@
 // Interative Approach
 
 function factorial(num) {
+    if (num < 0) return undefined;
     let fact = 1;
     for (let i = num; i > 1; i--) {
         fact *= i;
@@ -13,4 +14,4 @@ function factorial(num) {
     return fact;
 }
 
-console.log(factorial(2));
+console.log(factorial(5));
