@@ -1,0 +1,1 @@
+if (arr.splice(arr.length))
