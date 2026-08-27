@@ -6,7 +6,7 @@ function collectOddValues(arr) {
     if (arr.length === 0) return;
 
     // if (arr.splice(arr.length))
-    console.log(arr.splice(arr.length));
+    console.log(arr.splice(0, arr.length));
 }
 
 collectOddValues([1,2,3,4,5]);
