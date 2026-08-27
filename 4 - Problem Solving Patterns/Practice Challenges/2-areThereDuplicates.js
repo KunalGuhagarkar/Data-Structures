@@ -26,7 +26,7 @@ function areThereDuplicates(...items) {
 // Space Complexity -> O(1)
 
 function areThereDuplicates2(...items) {
-    items.sort();
+    items.sort(); // sorts in O(n logn) time complexity
 
     for (let i = 0; i < items.length; i++) {
         if (items[i] === items[i+1]) return true;
