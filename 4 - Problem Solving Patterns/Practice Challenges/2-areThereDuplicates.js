@@ -5,6 +5,8 @@
 // areThereDuplicates(1, 2, 2) // true
 // areThereDuplicates('a', 'b', 'c', 'a') // true
 
+// Time Complexity -> O(n)
+// Space Complexity -> O(n)
 function areThereDuplicates(...items) {
     let freqCounter = {};
 
@@ -16,6 +18,20 @@ function areThereDuplicates(...items) {
     return false;
 }
 
-console.log(areThereDuplicates(1, 2, 3));
-console.log(areThereDuplicates(1, 2, 2));
-console.log(areThereDuplicates("a", "b", "c", "a"));
+// console.log(areThereDuplicates(1, 2, 3));
+// console.log(areThereDuplicates(1, 2, 2));
+// console.log(areThereDuplicates("a", "b", "c", "a"));
+
+// Time Complexity -> O(n log n)
+// Space Complexity -> O(1)
+
+function areThereDuplicates2(...items) {
+    items.sort();
+
+    console.log(items);
+}
+
+console.log(areThereDuplicates2(1, 2, 2));
+console.log(areThereDuplicates2(1, 2, 3));
+console.log(areThereDuplicates2("a", "b", "c", "a"));
+
