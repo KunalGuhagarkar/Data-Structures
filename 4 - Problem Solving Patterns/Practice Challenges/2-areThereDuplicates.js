@@ -16,7 +16,7 @@ function areThereDuplicates(...items) {
         freqCounter[item] = (freqCounter[item] || 0) + 1;
     }
 
-    console.log(freqCounter);
+    // console.log(freqCounter);
 
 }
 
