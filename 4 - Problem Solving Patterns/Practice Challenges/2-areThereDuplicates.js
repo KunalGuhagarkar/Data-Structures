@@ -10,12 +10,12 @@ function areThereDuplicates(...items) {
 
     for (let item of items) {
         
-        // if (freqCounter[item]) {
-        //     return 'true';
-        // }
+        if (freqCounter[item]) {
+            return 'true';
+        }
         freqCounter[item] = (freqCounter[item] || 0) + 1;
-        console.log(freqCounter[item]);
     }
+    return false;
 
     // console.log(freqCounter);
 
