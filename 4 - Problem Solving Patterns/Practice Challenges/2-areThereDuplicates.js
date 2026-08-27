@@ -11,7 +11,7 @@ function areThereDuplicates(...items) {
     for (let item of items) {
         
         if (freqCounter[item]) {
-            return 'true';
+            return true;
         }
         freqCounter[item] = (freqCounter[item] || 0) + 1;
     }
