@@ -8,6 +8,7 @@ function collectOddValues(arr) {
     console.log(arr);
 
     if (arr[0] % 2 === 0) {
+        console.log(arr);
         return collectOddValues(arr.splice(1));
     }
 }
