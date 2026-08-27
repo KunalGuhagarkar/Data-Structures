@@ -1,4 +1,4 @@
-// First Recursive Code
+// First Recursive Function
 
 // Count Down from n numbers
 
