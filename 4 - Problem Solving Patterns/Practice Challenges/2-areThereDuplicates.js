@@ -2,29 +2,22 @@
 
 // Examples
 // areThereDuplicates(1, 2, 3) // false
-// areThereDuplicates(1, 2, 2) // true 
+// areThereDuplicates(1, 2, 2) // true
 // areThereDuplicates('a', 'b', 'c', 'a') // true
 
 function areThereDuplicates(...items) {
     let freqCounter = {};
 
     for (let item of items) {
-        
-        if (freqCounter[item]) {
-            return true;
-        }
+        if (freqCounter[item]) return true;
         freqCounter[item] = (freqCounter[item] || 0) + 1;
     }
     return false;
 
     // console.log(freqCounter);
-
 }
 
-console.log(areThereDuplicates(1,2,3));
-console.log(areThereDuplicates(1,2,2));
-console.log(areThereDuplicates('a', 'b', 'c', 'a'));
+console.log(areThereDuplicates(1, 2, 3));
+console.log(areThereDuplicates(1, 2, 2));
+console.log(areThereDuplicates("a", "b", "c", "a"));
 console.log(areThereDuplicates());
-
-
-
