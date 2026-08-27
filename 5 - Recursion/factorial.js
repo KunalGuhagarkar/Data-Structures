@@ -7,11 +7,10 @@
 
 function factorial(num) {
     let fact = 1;
-    for (let i = num; i > 0; i--) {
+    for (let i = num; i > 1; i--) {
         fact *= i;
-        console.log(i, fact);
     }
     return fact;
 }
 
-console.log(factorial(5));
+console.log(factorial(2));
