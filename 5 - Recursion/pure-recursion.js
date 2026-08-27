@@ -6,10 +6,9 @@ function collectOddValues(arr) {
     if (arr.length === 0) return;
 
     console.log(arr);
-    const result = [];
 
     if (arr[0] % 2 !== 0) {
-        result.push(arr[0])
+        
     }
     return collectOddValues(arr.splice(1));
 }
