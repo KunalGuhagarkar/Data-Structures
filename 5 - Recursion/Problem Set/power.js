@@ -4,8 +4,7 @@
 function power(num, exp) {
     let result = 1;
     if (exp < 1) return;
-    result = num * power(num, exp - 1);
-    console.log(result);
+    return num * power(num, exp - 1);
 }
 
 console.log(power(2, 3));
