@@ -5,7 +5,8 @@ function power(num, exp) {
     let result = 0;
     while (exp > 0) {
         console.log(num);
-        return num * power(num, exp - 1);
+        result = num * power(num, exp - 1);
+        console.log(result);
     }
 }
 
