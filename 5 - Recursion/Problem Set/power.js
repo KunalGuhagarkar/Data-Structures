@@ -3,7 +3,8 @@
 
 function power(num, exp) {
     let result = 1;
-    if (exp < 1) return;
+    if (exp < 1) return exp;
+    console.log(num);
     return num * power(num, exp - 1);
 }
 
