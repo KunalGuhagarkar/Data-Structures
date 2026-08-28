@@ -6,3 +6,5 @@ function power(num, exp) {
         return num * power(num, exp - 1);
     }
 }
+
+console.log(power(2, 3));
