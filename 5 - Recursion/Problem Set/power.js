@@ -8,3 +8,5 @@ function power(num, exp) {
 }
 
 console.log(power(2, 0));
+console.log(power(2, 2));
+console.log(power(2, 4));
