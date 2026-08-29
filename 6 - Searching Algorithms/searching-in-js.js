@@ -22,5 +22,5 @@ console.log(names.find(name => name === "Taylor")); // Taylor (found)
 console.log(names.find(name => name === "Kunal")); // undefined (not found)
 
 // findIndex
-console.log(names.findIndex(name => name === "Sam"));
-console.log(names.findIndex(name => name === "Kunal"));
+console.log(names.findIndex(name => name === "Sam")); // 4 (found at index 4)
+console.log(names.findIndex(name => name === "Kunal")); // -1 (not found)
