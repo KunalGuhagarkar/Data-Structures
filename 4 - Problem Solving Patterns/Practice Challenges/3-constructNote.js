@@ -22,6 +22,10 @@ function constructNote(msg, letters) {
         freqCounter[char] = (freqCounter[char] || 0) + 1;
     }
 
+    for (let char of letters) {
+        freqCounter[char]--;
+    }
+
     console.log(freqCounter);
 }
 
