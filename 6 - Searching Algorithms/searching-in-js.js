@@ -18,5 +18,5 @@ console.log(names.includes("Morgan")); // true (found)
 console.log(names.includes("Kunal")); // false (not found)
 
 // find
-console.log(names.find('Jordan'));
-console.log(names.find('Kunal'));
+console.log(names.find(("T")));
+// console.log(names.find('Kunal'));
