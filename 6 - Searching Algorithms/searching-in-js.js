@@ -6,6 +6,8 @@
 // find
 // findIndex
 
+// Examples:
+
 const names = ["Alex", "Jordan", "Taylor", "Morgan", "Sam", "Riley"];
 // indexes:      0         1         2         3       4       5
 
