@@ -14,3 +14,7 @@
 // constructNote('aa', 'abc') // false
 // constructNote('abc', 'dcba') // true
 // constructNote('aabbcc', 'bcabcaddff') // true
+
+function constructNote(msg, letters) {
+    
+}
