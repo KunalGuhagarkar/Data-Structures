@@ -25,4 +25,4 @@ function constructNote(msg, letters) {
     console.log(freqCounter);
 }
 
-console.log(constructNote("abc", "bac"));
+console.log(constructNote("aabc", "bac"));
