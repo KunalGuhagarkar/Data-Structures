@@ -18,5 +18,9 @@ console.log(names.includes("Morgan")); // true (found)
 console.log(names.includes("Kunal")); // false (not found)
 
 // find
-console.log(names.find(name => name === "Taylor"));
-console.log(names.find(name => name === "Kunal"));
+console.log(names.find(name => name === "Taylor")); // Taylor (found)
+console.log(names.find(name => name === "Kunal")); // undefined (not found)
+
+// findIndex
+console.log(names.findIndex(name => name === "Sam"));
+console.log(names.findIndex(name => name === "Kunal"));
