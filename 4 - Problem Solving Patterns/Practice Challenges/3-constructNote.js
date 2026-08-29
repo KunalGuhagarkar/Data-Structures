@@ -23,7 +23,7 @@ function constructNote(msg, letters) {
     }
 
     for (let char of msg) {
-        if(!(freqCounter[char])) {
+        if (!freqCounter[char]) {
             return false;
         }
         freqCounter[char]--;
@@ -32,5 +32,5 @@ function constructNote(msg, letters) {
 }
 
 console.log(constructNote("a", "aa"));
-console.log(constructNote("abc", "dcba"));  
+console.log(constructNote("abc", "dcba"));
 console.log(constructNote("aabbcc", "bcabcaddff"));
