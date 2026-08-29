@@ -18,11 +18,11 @@
 function constructNote(msg, letters) {
     const freqCounter = {};
 
-    for (let char of msg) {
+    for (let char of letters) {
         freqCounter[char] = (freqCounter[char] || 0) + 1;
     }
 
-    for (let char of letters) {
+    for (let char of msg) {
         if(!(freqCounter[char])) {
             return false;
         }
