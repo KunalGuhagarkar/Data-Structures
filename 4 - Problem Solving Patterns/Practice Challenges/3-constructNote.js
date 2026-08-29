@@ -27,13 +27,14 @@ function constructNote(msg, letters) {
     }
 
     for (let char of msg) {
-        if (freqCounter[char] === 0) {
-            console.log(freqCounter[char]);
-            console.log(true);
+        if (!(freqCounter[char] === 0)) {
+            return false;
         }
     }
 
     console.log(freqCounter);
+    return true;
+
 }
 
 console.log(constructNote("aabc", "bac"));
