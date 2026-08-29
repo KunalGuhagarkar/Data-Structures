@@ -14,5 +14,9 @@ console.log(names.indexOf('Jordan')); // 1 (found at index 1)
 console.log(names.indexOf('Kunal')); // -1 (not found)
 
 // includes
-console.log(names.includes("Morgan"));
-console.log(names.includes("Kunal"));
+console.log(names.includes("Morgan")); // true (found)
+console.log(names.includes("Kunal")); // false (not found)
+
+// find
+console.log(names.find('Jordan'));
+console.log(names.find('Kunal'));
