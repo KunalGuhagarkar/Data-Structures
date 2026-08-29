@@ -9,4 +9,4 @@ function linearSearch(arr, target) {
     return -1;
 }
 
-console.log(linearSearch([5, 8, 1, 100, 12, 3, 12], 12));
+console.log(linearSearch([5, 8, 1, 100, 12, 3, 12], 12)); // Output -> 4
