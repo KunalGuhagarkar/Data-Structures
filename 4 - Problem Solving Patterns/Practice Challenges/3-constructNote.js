@@ -26,6 +26,13 @@ function constructNote(msg, letters) {
         freqCounter[char]--;
     }
 
+    for (let char of msg) {
+        if (freqCounter[char] === 0) {
+            console.log(true);
+        }
+    }
+    console.log(false);
+
     console.log(freqCounter);
 }
 
