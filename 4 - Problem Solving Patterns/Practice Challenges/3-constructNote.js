@@ -34,6 +34,6 @@ function constructNote(msg, letters) {
     return true;
 }
 
-console.log(constructNote("aa", "abc"));
-console.log(constructNote("abc", "dcba"));
+console.log(constructNote("a", "aa"));
+console.log(constructNote("abc", "dcba"));  
 console.log(constructNote("aabbcc", "bcabcaddff"));
