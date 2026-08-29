@@ -19,4 +19,4 @@ console.log(names.includes("Kunal")); // false (not found)
 
 // find
 console.log(names.find(name => name === "Taylor"));
-// console.log(names.find('Kunal'));
+console.log(names.find(name => name === "Kunal"));
