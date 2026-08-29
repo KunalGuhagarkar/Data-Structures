@@ -28,10 +28,10 @@ function constructNote(msg, letters) {
 
     for (let char of msg) {
         if (freqCounter[char] === 0) {
+            console.log(freqCounter[char]);
             console.log(true);
         }
     }
-    console.log(false);
 
     console.log(freqCounter);
 }
