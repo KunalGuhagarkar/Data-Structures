@@ -9,4 +9,5 @@
 const names = ["Alex", "Jordan", "Taylor", "Morgan", "Sam", "Riley"];
 
 // indexOf
-console.log(names.indexOf('Jordan'));
+console.log(names.indexOf('Jordan')); // 1
+console.log(names.indexOf('Kunal'));
