@@ -16,7 +16,7 @@
 // constructNote('aabbcc', 'bcabcaddff') // true
 
 function constructNote(msg, letters) {
-    const freqCounter = {}
+    const freqCounter = {};
 
     for (let char of msg) {
         freqCounter[char] = (freqCounter[char] || 0) + 1;
@@ -31,10 +31,7 @@ function constructNote(msg, letters) {
             return false;
         }
     }
-
-    console.log(freqCounter);
     return true;
-
 }
 
 console.log(constructNote("aa", "abc"));
