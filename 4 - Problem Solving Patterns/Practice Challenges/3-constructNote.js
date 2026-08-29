@@ -23,13 +23,10 @@ function constructNote(msg, letters) {
     }
 
     for (let char of letters) {
-        freqCounter[char]--;
-    }
-
-    for (let char of msg) {
-        if (!(freqCounter[char] === 0)) {
+        if(!(freqCounter[char])) {
             return false;
         }
+        freqCounter[char]--;
     }
     return true;
 }
