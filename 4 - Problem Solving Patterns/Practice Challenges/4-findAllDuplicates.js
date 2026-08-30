@@ -13,7 +13,6 @@ function findAllDuplicates(arr) {
     for (let num of arr) {
         freqCounter[num] = (freqCounter[num] || 0) + 1;
     }
-    console.log(freqCounter);
 
     let result = [];
 
@@ -22,8 +21,7 @@ function findAllDuplicates(arr) {
             result.push(Number(key));
         }
     }
-    console.log(typeof result[0]);
     return result;
 }
 
-console.log(findAllDuplicates([4,3,2,7,8,2,3,1]));
+console.log(findAllDuplicates([4, 3, 2, 7, 8, 2, 3, 1]));
