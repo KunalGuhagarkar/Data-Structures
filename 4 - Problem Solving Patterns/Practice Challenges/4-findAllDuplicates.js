@@ -19,6 +19,7 @@ function findAllDuplicates(arr) {
 
     for (let key in freqCounter) {
         if (freqCounter[key] === 2) {
+            console.log(typeof key)
             result.push(key);
         }
     }
