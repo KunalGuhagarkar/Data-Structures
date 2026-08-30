@@ -15,6 +15,7 @@ function productOfArray(arr) {
 // Time Complexity -> O(n)
 function productOfArray2(arr, index=0) {
     // if (index == arr.length) return;
+    console.log(arr[index]);
     return arr[index] * productOfArray2[arr, index + 1]; 
 }
 
