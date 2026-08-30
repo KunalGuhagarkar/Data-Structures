@@ -7,7 +7,8 @@
 function productOfArray(arr) {
     if (arr.length < 1) return 1;
 
-    return arr[0] * productOfArray(arr);
+    console.log(arr.pop());
+    // return arr[0] * productOfArray(arr);
 }
 
 console.log(productOfArray([1,2,3]));
