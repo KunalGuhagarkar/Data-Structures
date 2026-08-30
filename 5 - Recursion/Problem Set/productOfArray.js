@@ -6,7 +6,7 @@
 
 function productOfArray(arr) {
     if (arr.length < 1) return 1;
-
+    console.log(arr);
     return arr.shift() * productOfArray(arr);
 }
 
