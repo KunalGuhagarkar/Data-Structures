@@ -10,9 +10,14 @@
 // - Return the count
 
 function naiveStringSearch(str, keyword) {
+    let count = 0;
     for (let char of str) {
         for (let key of keyword) {
-            console.log(key);
+            if (char !== key) {
+                break;
+            }
+
+            count++;
         }
     }
 }
