@@ -7,9 +7,7 @@
 function productOfArray(arr) {
     if (arr.length < 1) return 1;
 
-    console.log(arr.shift());
-    console.log(arr);
-    // return arr[0] * productOfArray(arr);
+    return arr.shift() * productOfArray(arr);
 }
 
 console.log(productOfArray([1,2,3]));
