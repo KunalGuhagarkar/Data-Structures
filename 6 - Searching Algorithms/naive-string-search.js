@@ -23,4 +23,4 @@ function naiveStringSearch(str, keyword) {
     return count;
 }
 
-console.log(naiveStringSearch("kunalkunalnal", "nal"));
+console.log(naiveStringSearch("kunalkunalnal", "kunal"));
