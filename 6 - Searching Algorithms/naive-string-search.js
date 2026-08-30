@@ -15,9 +15,10 @@ function naiveStringSearch(str, keyword) {
         for (let key of keyword) {
             if (char !== key) {
                 break;
+            } else {
+                count++
+                break;
             }
-
-            count++;
         }
     }
     return count;
