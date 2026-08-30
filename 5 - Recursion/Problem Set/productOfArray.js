@@ -10,4 +10,5 @@ function productOfArray(arr) {
     return arr.shift() * productOfArray(arr);
 }
 
-console.log(productOfArray([1,2,3]));
+console.log(productOfArray([1, 2, 3]));
+console.log(productOfArray([1, 2, 3, 10]));
