@@ -16,6 +16,7 @@ function naiveStringSearch(str, keyword) {
             if (str[i] !== keyword[j]) {
                 break;
             }
+            console.log(str[i], keyword[j]);
         }
     }
 }
