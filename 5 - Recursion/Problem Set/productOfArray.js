@@ -10,3 +10,4 @@ function productOfArray(arr) {
     return arr[0] * productOfArray(arr-1);
 }
 
+console.log(productOfArray([1,2,3]));
