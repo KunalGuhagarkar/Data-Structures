@@ -7,3 +7,12 @@
 // findAllDuplicates([4, 3, 2, 1, 0]) // []
 // findAllDuplicates([4, 3, 2, 1, 0, 1, 2, 3]) // array with 3, 2, and 1
 
+function findAllDuplicates(arr) {
+    let freqCounter = {};
+
+    for (let num of arr) {
+        freqCounter[num] = (freqCounter[num] || 0) + 1;
+    }
+    console.log(freqCounter);
+}
+
