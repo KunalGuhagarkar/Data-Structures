@@ -20,6 +20,7 @@ function naiveStringSearch(str, keyword) {
             count++;
         }
     }
+    return count;
 }
 
 console.log(naiveStringSearch("kunal", "nal"));
