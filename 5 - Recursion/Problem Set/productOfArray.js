@@ -4,10 +4,19 @@
 // productOfArray([1,2,3]) // 6
 // productOfArray([1,2,3,10]) // 60
 
+// Solution
+
+// Time Complexity -> O(n^2)
 function productOfArray(arr) {
     if (arr.length < 1) return 1;
     return arr.shift() * productOfArray(arr);
 }
 
-console.log(productOfArray([1, 2, 3]));
-console.log(productOfArray([1, 2, 3, 10]));
+// Time Complexity -> O(n)
+function productOfArray2(arr, index=0) {
+    if (arr.length < 1) return 1;
+    return arr[index] * arr[arr, index + 1]; 
+}
+
+console.log(productOfArray2([1, 2, 3]));
+console.log(productOfArray2([1, 2, 3, 10]));
