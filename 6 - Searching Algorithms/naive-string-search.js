@@ -18,6 +18,7 @@ function naiveStringSearch(str, keyword) {
             }
             console.log(char, key);
         }
+        console.log(char)
         count++
     }
     return count;
