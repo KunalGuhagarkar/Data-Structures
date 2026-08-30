@@ -11,7 +11,9 @@
 
 function naiveStringSearch(str, keyword) {
     for (let char of str) {
-        console.log(char);
+        for (let key of keyword) {
+            console.log(key);
+        }
     }
 }
 
