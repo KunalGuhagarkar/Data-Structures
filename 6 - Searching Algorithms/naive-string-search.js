@@ -13,9 +13,9 @@ function naiveStringSearch(str, keyword) {
     let count = 0;
     for (let i = 0; i < str.length; i++) {
         for (let j = 0; j < keyword.length; j++) {
-            if (str[i] !== keyword[j]) {
+            if (str[i] !== keyword[i+j]) {
                 break;
-            }
+            } 
             console.log(str[i], keyword[j]);
         }
     }
