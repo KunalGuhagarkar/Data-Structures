@@ -16,6 +16,7 @@ function naiveStringSearch(str, keyword) {
             if (char !== key) {
                 break;
             }
+            console.log(key);
         }
         count++
     }
