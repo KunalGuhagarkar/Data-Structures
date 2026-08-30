@@ -13,7 +13,7 @@ function naiveStringSearch(str, keyword) {
     let count = 0;
     for (let char of str) {
         for (let key of keyword) {
-            console.log(char, key);
+            console.log(key)
         }
         console.log(char)
         count++
