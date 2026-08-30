@@ -13,10 +13,8 @@ function naiveStringSearch(str, keyword) {
     let count = 0;
     for (let char of str) {
         for (let key of keyword) {
-            if (char !== key) {
-                break;
-            } else {
-                count++
+            if (char === key) {
+                count++;
                 break;
             }
         }
