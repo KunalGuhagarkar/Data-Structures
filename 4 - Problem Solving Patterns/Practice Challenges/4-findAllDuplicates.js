@@ -15,7 +15,7 @@ function findAllDuplicates(arr) {
     }
     console.log(freqCounter);
 
-    for (let key of freqCounter) {
+    for (let key in freqCounter) {
         console.log(key);
     }
 }
