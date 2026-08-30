@@ -17,9 +17,13 @@ function naiveStringSearch(str, keyword) {
             if (str[i] !== keyword[i+j]) {
                 console.log("BREAK")
                 break;
-            } 
+            }
+            if ( j === keyword.length-1) {
+                count++
+            }
         }
     }
+    return count;
 }
 
 console.log(naiveStringSearch("kkkunal", "kunal"));
