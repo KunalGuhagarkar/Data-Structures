@@ -20,7 +20,7 @@ function averagePair(arr, target) {
     if (arr.length === 0) return false;
 
     let first = 0;
-    let second = first + 1;
+    let second = 1;
 
     while (second < arr.length) {
         if ((arr[first] + arr[second]) / 2 === target) {
