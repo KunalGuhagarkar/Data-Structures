@@ -1,19 +1,16 @@
 // Implementing Naive String Search
 
-function naiveStringSearch(long, short) {
+function naiveStringSearch(str, keyword) {
     let count = 0;
-    for(let i = 0; i < long.length; i++) {
-        for (let j = 0; j < short.length; j++) {
-            if(long[i+j] !== short[i]) {
-                console.log("BREAK")
+    for (let i=0; i < str.length; i++) {
+        for (let j=0; j < keyword.length) {
+            if (str[i+j] !== keyword[j]) {
                 break;
             }
-            if (j === short.length-1) {
-                count++
-            }
+            if (j === keyword.length-1) count++
         }
-        return count;
     }
+    return count;
 }
 
-console.log(naiveStringSearch("kkkunal ku", "ku"));
+console.log(naiveStringSearch("gokgokgok", "gok"));
