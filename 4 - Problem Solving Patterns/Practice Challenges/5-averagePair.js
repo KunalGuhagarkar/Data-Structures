@@ -21,14 +21,14 @@ function averagePair(arr, target) {
     let second = first + 1;
 
     while (second < arr.length) {
-        if((arr[first] + arr[second] / 2) === target) {
+        if ((arr[first] + arr[second]) / 2 === target) {
             return true;
         }
         console.log(arr[first], arr[second]);
         first++;
-        second++
+        second++;
     }
     return false;
 }
 
-console.log(averagePair([1,2,3],2.5));
+console.log(averagePair([1, 2, 3], 2.5));
