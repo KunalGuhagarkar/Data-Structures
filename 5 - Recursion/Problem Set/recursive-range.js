@@ -9,5 +9,6 @@
 // Solution
 
 function recursiveRange(num) {
-    
+    if (num === 1) return;
+    return num + recursiveRange(num - 1);
 }
