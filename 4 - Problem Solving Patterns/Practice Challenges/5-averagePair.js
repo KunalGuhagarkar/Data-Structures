@@ -20,15 +20,18 @@ function averagePair(arr, target) {
     if (arr.length === 0) return false;
 
     let first = 0;
-    let second = 1;
+    let second = arr.length-1;
 
     while (second < arr.length) {
-        console.log((arr[first] + arr[second]) / 2);
-        if ((arr[first] + arr[second]) / 2 === target) {
+        let avg = (arr[first] + arr[second]) / 2;
+        if (avg / 2 === target) {
             return true;
+        } else if (avg < target) {
+            first++
+        } else {
+            second--
         }
-        first++;
-        second++;
+        
     }
     return false;
 }
