@@ -5,6 +5,7 @@ function naiveStringSearch(long, short) {
         for (let j = 0; j < short.length; j++) {
             console.log(short[j]);
         }
+        console.log("BREAK");
     }
 }
 
