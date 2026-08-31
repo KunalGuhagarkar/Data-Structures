@@ -21,7 +21,7 @@ function averagePair(arr, target) {
     let second = first + 1;
 
     while (first < arr.length) {
-        if(arr[first] + arr[second] === target) {
+        if((arr[first] + arr[second] / 2) === target) {
             return true;
         }
         first++;
