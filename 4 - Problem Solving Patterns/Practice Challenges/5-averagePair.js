@@ -24,7 +24,7 @@ function averagePair(arr, target) {
         if((arr[first] + arr[second] / 2) === target) {
             return true;
         }
-        console.log(first, second);
+        console.log(arr[first], arr[second]);
         first++;
         second++
     }
