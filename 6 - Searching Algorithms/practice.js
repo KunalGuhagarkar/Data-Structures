@@ -6,7 +6,7 @@ function naiveStringSearch(long, short) {
             if(long[i] !== short[j+i]) {
                 break;
             }
-            console.log(long[i], short[j]);
+            console.log(long[i], short[j+i]);
         }
         console.log("BREAK");
     }
