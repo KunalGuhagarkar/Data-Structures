@@ -13,13 +13,13 @@ function naiveStringSearch(str, keyword) {
     let count = 0;
     for (let i = 0; i < str.length; i++) {
         for (let j = 0; j < keyword.length; j++) {
-            console.log(keyword[j], str[j+i]);
-            if (keyword[j] !== str[i+j]) {
-                console.log("BREAK")
+            console.log(keyword[j], str[j + i]);
+            if (keyword[j] !== str[i + j]) {
+                console.log("BREAK");
                 break;
             }
-            if ( j === keyword.length-1) {
-                count++
+            if (j === keyword.length - 1) {
+                count++;
             }
         }
     }
