@@ -15,3 +15,17 @@
 // averagePair([],4) // false
 
 // Solution
+
+function averagePair(arr, target) {
+    let first = 0;
+    let second = first + 1;
+
+    while (first < arr.length) {
+        if(arr[first] + arr[second] === target) {
+            return true;
+        }
+        first++;
+        second++
+    }
+    return false;
+}
