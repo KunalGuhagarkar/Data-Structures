@@ -17,6 +17,8 @@
 // Solution
 
 function averagePair(arr, target) {
+    if (arr.length === 0) return false;
+
     let first = 0;
     let second = first + 1;
 
