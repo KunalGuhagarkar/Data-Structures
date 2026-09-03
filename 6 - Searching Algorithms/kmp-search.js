@@ -1,28 +1,27 @@
-// KMP search
+// KMP (Knutt-Morris-Pratt) Search
 
-// Building the table
-
+// Building the Table
 function matchTable(word) {
-    let arr = Array.from({length: word.length}).fill(0);
-    let prefixEnd = 0;
+    let arr = Array.from({ length: word.length }).fill(0);
     let suffixEnd = 1;
-
+    let prefixEnd = 0;
+    // lolol
     while (suffixEnd < word.length) {
-        if (word[prefixEnd] === word[suffixEnd]) {
+        if (word[suffixEnd] === word[prefixEnd]) {
             prefixEnd++;
             arr[suffixEnd] = prefixEnd;
             suffixEnd += 1;
-        }
-        else if (word[prefixEnd] !== word[suffixEnd] && prefixEnd !== 0) {
-            prefixEnd = arr[prefixEnd-1];
-        }
-        else {
-            suffixEnd++;
-            arr[suffixEnd] = prefixEnd;
+        } else if (word[suffixEnd] !== word[prefixEnd] && prefixEnd !== 0) {
+            prefixEnd = arr[prefixEnd - 1];
+        } else {
+            arr[suffixEnd] = 0;
+            suffixEnd += 1;
         }
     }
     return arr;
 }
+
+console.log(matchTable("lolol"));
 
 // KMP Search
 
@@ -35,8 +34,7 @@ function kmpSearch(long, short) {
         if (short[shortIndex] !== long[longIndex]) {
             if (shortIndex === 0) longIndex += 1;
             else shortIndex = table[shortIndex - 1];
-        }
-        else {
+        } else {
             shortIndex++;
             longIndex++;
             if (shortIndex === short.length) {
@@ -48,5 +46,5 @@ function kmpSearch(long, short) {
     return count;
 }
 
-console.log(kmpSearch('lolol', 'lol'));
-console.log(kmpSearch('abacababda', 'ab'));
+console.log(kmpSearch("lolol", "lol"));
+console.log(kmpSearch("abacababda", "ab"));
