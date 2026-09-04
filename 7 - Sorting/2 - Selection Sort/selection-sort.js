@@ -15,10 +15,14 @@ function selectionSort(arr) {
             if (arr[j + 1] < arr[j]) {
                 min = arr[j + 1];
             }
-            
+
+            if (arr[i] !== min) {
+                [arr[i], arr[j + 1]] = [arr[j + 1], arr[i]];
+            }
         }
     }
     console.log(min);
+    return arr;
 }
 
 console.log(selectionSort([5, 4, 3, 2, 1]));
