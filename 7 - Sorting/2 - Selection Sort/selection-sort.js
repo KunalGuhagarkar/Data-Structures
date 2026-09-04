@@ -14,10 +14,9 @@ function selectionSort(arr) {
             if (arr[i] > arr[j]) {
                 min = arr[j];
             }
-            if (arr[i] !== arr[j]) {
-                [arr[i], arr[j]] = [arr[j], arr[i]];
-               
-            }
+        }
+        if (arr[i] !== arr[j]) {
+            [arr[i], arr[j]] = [arr[j], arr[i]];
         }
     }
     console.log(min);
