@@ -13,16 +13,13 @@ function selectionSort(arr) {
         for (let j = 0; j < arr.length; j++) {
             if (arr[j + 1] < arr[j]) {
                 min = arr[j + 1];
-
-                if (arr[i] !== min) {
-                    [arr[i], arr[j + 1]] = [arr[j + 1], arr[i]];
-                    
-                }
             }
         }
+        console.log(min);
     }
+    
     return arr;
 }
 
-console.log(selectionSort([5, 4, 3, 2, 1]));
+// console.log(selectionSort([5, 4, 3, 2, 1]));
 console.log(selectionSort([23, 8, 15, 4, 42, 16]));
