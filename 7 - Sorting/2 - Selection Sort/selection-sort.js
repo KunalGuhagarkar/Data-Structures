@@ -24,3 +24,4 @@ function selectionSort(arr) {
 }
 
 console.log(selectionSort([5, 4, 3, 2, 1]));
+console.log(selectionSort([23, 8, 15, 4, 42, 16]));
