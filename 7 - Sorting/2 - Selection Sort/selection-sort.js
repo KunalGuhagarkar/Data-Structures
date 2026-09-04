@@ -27,3 +27,21 @@ function selectionSort(arr) {
 // console.log(selectionSort([5, 4, 3, 2, 1]));
 // console.log(selectionSort([23, 8, 15, 4, 42, 16]));
 console.log(selectionSort([34, 22, 10, 19, 17]));
+
+// i = 0
+// j   min
+// 1   0
+//     1
+
+// 2   1
+//     2
+
+// 3   2
+//     2
+
+// 4   2
+//     2
+
+// in if
+// i = 0 !== min = 2 // true
+// swap arr[i] and arr[min]
