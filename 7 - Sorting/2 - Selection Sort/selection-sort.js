@@ -8,5 +8,11 @@
 // - Repeat this with the next element until the array is sorted.
 
 function selectionSort(arr) {
-    
+    let min;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i+1] < arr[i] ) {
+            min = arr[i+1];
+        }
+    }
+    console.log(min);
 }
