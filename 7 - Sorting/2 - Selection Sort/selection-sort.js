@@ -14,6 +14,7 @@ function selectionSort(arr) {
             console.log(arr[j+1], arr[j])
             if (arr[j+1] < arr[j]) {
                 min = arr[j+1];
+                console.log(min);
             }
             // if (arr[i] !== arr[j]) {
             //     [arr[i], arr[j]] = [arr[j], arr[i]];
