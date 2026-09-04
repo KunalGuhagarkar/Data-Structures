@@ -13,8 +13,11 @@ function selectionSort(arr) {
         for (let j = 1; j < arr.length; j++) {
             if (arr[i] > arr[j]) {
                 min = arr[j];
+
+                if (arr[i] !== min) {
+                    [arr[i], arr[j]] = [arr[j], arr[i]];
+                }
             }
-            
         }
     }
     console.log(min);
