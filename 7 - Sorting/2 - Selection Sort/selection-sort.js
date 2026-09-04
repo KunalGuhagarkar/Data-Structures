@@ -21,4 +21,5 @@ function selectionSort(arr) {
 }
 
 // console.log(selectionSort([5, 4, 3, 2, 1]));
-console.log(selectionSort([23, 8, 15, 4, 42, 16]));
+// console.log(selectionSort([23, 8, 15, 4, 42, 16]));
+console.log(selectionSort([34, 22, 10, 19, 17]));
