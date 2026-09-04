@@ -8,18 +8,10 @@
 // - Repeat this with the next element until the array is sorted.
 
 function selectionSort(arr) {
-    let min;
     for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < arr.length; j++) {
-            if (arr[i] > arr[j]) {
-                min = arr[j];
-            }
-        }
-        if (arr[i] !== min) {
-            [arr[i], min] = [min, arr[i]];
-        }
-    }
-    console.log(min);
+        let min = i;
+        
+    }    
 
     return arr;
 }
