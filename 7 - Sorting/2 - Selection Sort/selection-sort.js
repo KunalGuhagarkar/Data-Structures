@@ -10,11 +10,12 @@
 function selectionSort(arr) {
     let min;
     for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
         for (let j = 0; j < arr.length; j++) {
             if (arr[j + 1] < arr[j]) {
                 min = arr[j + 1];
             }
-            console.log(arr[j], arr[j + 1]);
+            
         }
     }
     console.log(min);
