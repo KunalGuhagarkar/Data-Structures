@@ -14,10 +14,10 @@ function selectionSort(arr) {
         for (let j = 0; j < arr.length; j++) {
             if (arr[j + 1] < arr[j]) {
                 min = arr[j + 1];
-            }
 
-            if (arr[i] !== min) {
-                [arr[i], arr[j + 1]] = [arr[j + 1], arr[i]];
+                if (arr[i] !== min) {
+                    [arr[i], arr[j + 1]] = [arr[j + 1], arr[i]];
+                }
             }
         }
     }
