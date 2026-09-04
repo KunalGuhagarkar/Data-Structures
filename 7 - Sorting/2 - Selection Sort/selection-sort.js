@@ -16,3 +16,5 @@ function selectionSort(arr) {
     }
     console.log(min);
 }
+
+console.log(selectionSort([5,4,3,2,1]));
