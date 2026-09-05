@@ -1,16 +1,13 @@
-// insertion sort practice
+// bubble sort
 
-function insertionSort(arr) {
-    for (let i = 1; i < arr.length; i++) {
-        let currentVal = arr[i];
-        let j = i - 1;
-        while (j >= 0 && arr[j] > currentVal) {
-            arr[j + 1] = arr[j];
-            j--;
+function bubbleSort(arr) {
+    let noSwap;
+    for (let i = arr.length; i > 0; i--) {
+        noSwap = true;
+        for (let j = 0; j < i+1; j++) {
+            if (arr[j] < arr[j+1]) {
+                [arr[j], arr[j+1]] = [arr[j+1], arr[j]];
+            }
         }
-        arr[j + 1] = currentVal;
     }
-    return arr;
 }
-
-console.log(insertionSort([5, 4, 3, 2, 1]));
