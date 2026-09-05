@@ -11,7 +11,9 @@ function insertionSort(arr) {
         let currentVal = arr[i];
         for (let j = i - 1; j >= 0; j--) {
             if (currentVal < arr[j]) {
-                
+                arr[j+1] = arr[j]; 
+            } else {
+                arr[j] = currentVal;
             }
         }
     }
