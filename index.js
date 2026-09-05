@@ -7,6 +7,8 @@ function bubbleSort(arr) {
                 [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
             }
         }
+        console.log("PASS");
+        console.log(arr);
     }
 
     return arr;
