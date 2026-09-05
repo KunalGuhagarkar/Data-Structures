@@ -2,7 +2,7 @@
 
 function bubbleSort(arr) {
     for (let i = arr.length; i > arr.length; i--) {
-        for (let j = 0; j < arr.length; j++) {
+        for (let j = 0; j < i-1; j++) {
             console.log(arr[j], arr[j+1]);
             if (arr[j] > arr[j + 1]) {
                 [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
