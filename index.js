@@ -19,6 +19,8 @@ function selectionSort(arr) {
 
 console.log(selectionSort([5, 4, 3, 2, 1]));
 
+// insertion sort
+
 function insertionSort(arr) {
     for (let i = 1; i < arr.length; i++) {
         let currentValue = arr[i];
@@ -33,3 +35,4 @@ function insertionSort(arr) {
 }
 
 console.log(insertionSort([5, 4, 3, 2, 1]));
+
