@@ -39,7 +39,7 @@ function insertionSort(arr) {
         let currentVal = arr[i];
         let j = i - 1;
 
-        while (j <= 0 && arr[j] > currentVal) {
+        while (j >= 0 && arr[j] > currentVal) {
             
         }
     }
