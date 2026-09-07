@@ -22,7 +22,7 @@ function selectionSort(arr) {
     for (let i = 0; i < arr.length - 1; i++) {
         let min = arr[i];
         for (let j = 0; j < arr.length; j++) {
-            if (arr[j] > arr[min]) {
+            if (arr[j] < arr[min]) {
                 min = j;
             }
         }
@@ -32,3 +32,5 @@ function selectionSort(arr) {
     }
     return arr;
 }
+
+console.log(selectionSort([5,4,3,2,1]))
