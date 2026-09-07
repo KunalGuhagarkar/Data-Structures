@@ -16,7 +16,6 @@
 
 // console.log(bubbleSort([5, 4, 3, 2, 1]));
 
-
 // Selection Sort
 
 function selectionSort(arr) {
@@ -31,4 +30,7 @@ function selectionSort(arr) {
             [arr[min], arr[i]] = [arr[i], arr[min]];
         }
     }
+    return arr;
 }
+
+console.log(selectionSort([5, 4, 3, 2, 1]));
