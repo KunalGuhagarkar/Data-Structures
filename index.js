@@ -39,12 +39,10 @@ function insertionSort(arr) {
         let j = i - 1;
 
         while (j >= 0 && arr[j] > currentVal) {
-            arr[j + 1] = arr[j];
+            arr[j+1] = arr[j];
             j--;
         }
-        arr[j + 1] = currentVal;
+        arr[j] = currentVal;
     }
     return arr;
 }
-
-console.log(insertionSort([5, 4, 3, 2, 1]));
