@@ -36,3 +36,23 @@ function insertionSort(arr) {
 
 console.log(insertionSort([5, 4, 3, 2, 1]));
 
+// bubble Sort
+
+function bubbleSort(arr) {
+    let noSwaps;
+    for (let i = arr.length; i > 1; i--) {
+        let noSwaps = true;
+        for (let j = 0; j < i - 1; j++) {
+            if (arr[j] > arr[j+1]) {
+                let temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+                noSwaps = false;
+            }
+        }
+        if (noSwaps) break;
+    }
+    return arr;
+}
+
+console.log(bubbleSort([5,4,3,2,1]));
