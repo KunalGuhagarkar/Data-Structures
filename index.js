@@ -15,3 +15,21 @@ function insertionSort(arr) {
 
 console.log(insertionSort([5,4,3,2,1]));
 
+// Bubble Sort
+
+function bubbleSort(arr) {
+    let noSwaps;
+    for (let i = arr.length; i < 1; i--) {
+        noSwaps = true;
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] > arr[j+1]) {
+                [arr[j], arr[j+1]] = [arr[j+1], arr[j]];
+                noSwaps = false;
+            }
+        }
+        if (noSwaps) break;
+    }
+    return arr;
+}
+
+console.log(bubbleSort([5,4,3,2,1]));
