@@ -24,12 +24,12 @@ function mergingArrays(arr1, arr2) {
     }
 
     while (i < arr1.length) {
-        result.push(arr[i]);
+        result.push(arr1[i]);
         i++;
     }
 
     while (j < arr2.length) {
-        result.push(arr[j]);
+        result.push(arr2[j]);
         j++;
     }
 
