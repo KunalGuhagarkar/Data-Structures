@@ -14,11 +14,11 @@ function mergingArrays(arr1, arr2) {
     let j = 0;
 
     while (i < arr1.length || j < arr1.length) {
-        if (arr[i] < arr[j]) {
-            result.push(arr[i]);
+        if (arr1[i] < arr2[j]) {
+            result.push(arr1[i]);
             i++;
-        } else if(arr[j] < arr[i]) {
-            result.push(arr[j]);
+        } else if(arr2[j] < arr1[i]) {
+            result.push(arr2[j]);
             j++;
         }
     }
