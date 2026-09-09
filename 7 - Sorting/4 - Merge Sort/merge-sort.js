@@ -13,7 +13,7 @@ function mergingArrays(arr1, arr2) {
     let i = 0;
     let j = 0;
 
-    while (i < arr1.length && j < arr1.length) {
+    while (i < arr1.length || j < arr1.length) {
         if (arr1[i] < arr2[j]) {
             result.push(arr1[i]);
             i++;
@@ -21,11 +21,6 @@ function mergingArrays(arr1, arr2) {
             result.push(arr2[j]);
             j++;
         }
-    }
-    if (arr1.length > arr2.length) {
-        result.push(...arr1.splice(i, arr1.length));
-    } else {
-        result.push(...arr2.splice(j, arr2.length));
     }
     return result;
 }
