@@ -22,6 +22,11 @@ function mergingArrays(arr1, arr2) {
             j++;
         }
     }
+    if (i < arr1.length) {
+        result.push(...arr1.splice(i, arr1.length));
+    } else if (j < arr2.length) {
+        result.push(...arr2.splice(j, arr2.length));
+    }
     return result;
 }
 
