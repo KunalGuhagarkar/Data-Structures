@@ -10,8 +10,8 @@
 function mergeSort(arr) {
     if (arr.length <= 1) return arr;
     let mid = Math.floor(arr.length / 2);
-    let left = arr.slice(0, mid);
-    let right = arr.slice(mid);
+    let left = mergeSort(arr.slice(0, mid));
+    let right = mergeSort(arr.slice(mid));
     
 }
 
