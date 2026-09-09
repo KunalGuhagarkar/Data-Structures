@@ -1,54 +1,34 @@
-// Bubble sort
+// merge sort
 
-function bubbleSort(arr) {
-    let noSwap;
-    for (let i = arr.length; i > 1; i--) {
-        noSwap = true;
-        for (let j = 0; j < arr.length; j++) {
-            if (arr[j] > arr[j + 1]) {
-                [arr[j + 1], arr[j]] = [arr[j], arr[j + 1]];
-                noSwap = false;
-            }
-        }
-        if (noSwap) break;
-    }
-    return arr;
+function mergeSort(arr) {
+    if (arr.length <= 1) return arr;
+    let mid = Math.floor(arr.length / 2);
+    let leftArr = mergeSort(arr.slice(0, mid));
+    let rigthArr = mergeSort(arr.slice(mid));
+    return mergingSortedArrays(leftArr, rigthArr);
 }
 
-console.log(bubbleSort([5, 3, 2, 1]));
+function mergingSortedArrays(arr1, arr2) {
+    let result = [];
+    let i = 0;
+    let j = 0;
 
-// Selection Sort
-
-function selectionSort(arr) {
-    for (let i = 0; i < arr.length - 1; i++) {
-        let min = i;
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[j] < arr[min]) {
-                min = j;
-            }
-        }
-        if (min !== i) {
-            [arr[min], arr[i]] = [arr[i], arr[min]];
+    while (i < arr1.length && j < arr2.length) {
+        if (arr1[i] < arr2[j]) {
+            result.push(arr1[i]);
+            i++;
+        } else {
+            result.push(arr2[j]);
+            j++;
         }
     }
-    return arr;
-}
-
-console.log(selectionSort([5, 4, 3, 2, 1]));
-
-// Insertion Sort
-
-function insertionSort(arr) {
-    for (let i = 1; i < arr.length; i++) {
-        let currentValue = arr[i];
-        let j = i - 1;
-        while (j >= 0 && arr[j] > currentValue) {
-            arr[j + 1] = arr[j];
-            j--;
-        }
-        arr[j + 1] = currentValue;
+    while (i < arr1.length) {
+        result.push(arr1[i]);
+        i++;
     }
-    return arr;
+    while (j < arr2.length) {
+        result.push(arr2[j]);
+        j++;
+    }
+    return result;
 }
-
-console.log(insertionSort([5, 4, 3, 2, 1]));
