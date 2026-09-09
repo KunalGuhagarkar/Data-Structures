@@ -1,5 +1,3 @@
-// Merge Sort
-
 // Merging Arrays
 
 // - Create an empty array, take a look at the smallest values in each input array
