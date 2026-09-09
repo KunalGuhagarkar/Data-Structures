@@ -12,4 +12,8 @@ function mergeSort(arr) {
     let mid = Math.floor(arr.length / 2);
     let left = arr.slice(0, mid);
     let right = arr.slice(mid);
+    console.log(`left arr -> ${left}`);
+    console.log(`rigth arr -> ${right}`);
 }
+
+console.log(mergeSort([10,24,76,73]));
