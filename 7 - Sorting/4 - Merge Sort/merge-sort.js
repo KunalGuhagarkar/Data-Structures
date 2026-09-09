@@ -30,4 +30,4 @@ function mergingArrays(arr1, arr2) {
     return result;
 }
 
-console.log(mergingArrays([1, 10, 50], [2, 99, 14, 100]));
+console.log(mergingArrays([1, 10, 50], [2, 14, 99, 100]));
