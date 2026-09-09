@@ -6,7 +6,7 @@
 // - Once the array has been merged back together, return the merged (and sorted!) array
 
 // Solution
-import { mergingArrays } from "./merging-sorted-arrays";
+import { mergingArrays } from "./merging-sorted-arrays.js";
 
 function mergeSort(arr) {
     if (arr.length <= 1) return arr;
