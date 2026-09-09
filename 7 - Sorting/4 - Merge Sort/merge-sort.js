@@ -17,7 +17,7 @@ function mergingArrays(arr1, arr2) {
         if (arr1[i] < arr2[j]) {
             result.push(arr1[i]);
             i++;
-        } else if (arr2[j] < arr1[i]) {
+        } else {
             result.push(arr2[j]);
             j++;
         }
