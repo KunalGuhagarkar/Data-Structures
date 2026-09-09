@@ -23,8 +23,18 @@ function mergingArrays(arr1, arr2) {
         }
     }
 
-    result.push(...arr1.slice(i));
-    result.push(...arr2.slice(j));
+    while (i < arr1.length) {
+        result.push(arr[i]);
+        i++;
+    }
+
+    while (j < arr2.length) {
+        result.push(arr[j]);
+        j++;
+    }
+
+    // result.push(...arr1.slice(i));
+    // result.push(...arr2.slice(j));
 
     return result;
 }
