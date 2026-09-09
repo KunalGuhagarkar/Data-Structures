@@ -22,11 +22,10 @@ function mergingArrays(arr1, arr2) {
             j++;
         }
     }
-    if (i < arr1.length) {
-        result.push(...arr1.slice(i, arr1.length));
-    } else if (j < arr2.length) {
-        result.push(...arr2.slice(j, arr2.length));
-    }
+
+    result.push(...arr1.slice(i));
+    result.push(...arr2.slice(j));
+
     return result;
 }
 
