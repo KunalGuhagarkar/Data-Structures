@@ -24,4 +24,4 @@ function mergingArrays(arr1, arr2) {
     }
 }
 
-console.log([1, 10, 50], [2, 14, 99, 100]);
+console.log(mergingArrays([1, 10, 50], [2, 14, 99, 100]));
