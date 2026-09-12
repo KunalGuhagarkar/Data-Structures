@@ -36,4 +36,3 @@ function mergeSort(arr) {
 console.log(mergeSort([5, 4, 3, 2, 1]));
 
 // Hello
-// Oink
